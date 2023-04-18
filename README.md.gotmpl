@@ -1,0 +1,46 @@
+# {{ template "chart.name" . }} Helm Chart
+{{ template "chart.versionBadge" . }}
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/gotify)](https://artifacthub.io/packages/search?repo=gotify)
+
+From {{ template "chart.homepage" . }}:
+> Gotify a simple server for sending and receiving messages ## That's all!
+
+
+## Get Repo Info
+
+    helm repo add my-gotify https://pmoscode-helm.github.io/gotify/
+    helm repo update
+
+## Install chart
+
+    helm install [RELEASE_NAME] my-gotify/gotify
+
+The command deploys gotify on the Kubernetes cluster in the default configuration.
+
+See configuration below.
+
+See [helm install](https://helm.sh/docs/helm/helm_install/) for command documentation.
+
+## Uninstall Chart
+
+    helm uninstall [RELEASE_NAME]
+
+This removes all the Kubernetes components associated with the chart and deletes the release.
+
+See [helm uninstall](https://helm.sh/docs/helm/helm_uninstall/) for command documentation.
+
+## Upgrading Chart
+
+    helm upgrade [RELEASE_NAME] [CHART] --install
+
+See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command documentation.
+
+{{ template "chart.deprecationWarning" . }}
+
+{{ template "chart.requirementsSection" . }}
+
+{{ template "chart.valuesHeader" . }}
+
+{{ template "chart.valuesTable" . }}
+
+{{ template "chart.maintainersSection" . }}

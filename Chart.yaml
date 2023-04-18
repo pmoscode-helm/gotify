@@ -1,0 +1,16 @@
+apiVersion: v2
+name: gotify
+description: Gotify - a simple server for sending and receiving messages
+
+type: application
+version: 0.1.0
+appVersion: "2.2.4"
+
+home: https://gotify.net/
+sources:
+  - https://gotify.net/
+icon: https://github.com/gotify/logo/raw/master/gotify-logo-small.png
+maintainers:
+  - name: pmoscode
+    email: info@pmoscode.de
+    url: https://pmoscode.de

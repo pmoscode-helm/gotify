@@ -1,0 +1,108 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "gotify.fullname" . }}
+  labels:
+    {{- include "gotify.labels" . | nindent 4 }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "gotify.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "gotify.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "gotify.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            {{- if .Values.server.responseHeaders }}
+            - name: GOTIFY_SERVER_RESPONSEHEADERS
+              value: {{ .Values.server.responseHeaders | quote}}
+            {{- end }}
+            {{- if .Values.server.timezone }}
+            - name: TZ
+              value: {{ .Values.server.timezone | quote}}
+            {{- end }}
+            {{- if .Values.server.streamAllowedOrigins }}
+            - name: GOTIFY_SERVER_STREAM_ALLOWEDORIGINS
+              value: {{ .Values.server.streamAllowedOrigins | quote }}
+            {{- end }}
+            {{- if  .Values.server.databaseDialect }}
+            - name: GOTIFY_DATABASE_DIALECT
+              value: {{ .Values.server.databaseDialect | quote }}
+            {{- end }}
+            {{- if .Values.server.databaseConnection }}
+              {{- if  eq .Values.server.databaseDialect "sqlite3" }}
+            - name: GOTIFY_DATABASE_CONNECTION
+              value: "data/gotify.db"
+              {{- else }}
+            - name: GOTIFY_DATABASE_CONNECTION
+              value: {{ .Values.server.databaseConnection | quote }}
+              {{- end }}
+            {{- end }}
+            - name: GOTIFY_DEFAULTUSER_NAME
+              value: {{ .Values.server.defaultUserName | quote }}
+            - name: GOTIFY_DEFAULTUSER_PASS
+              value: {{ .Values.server.defaultUserPassword | quote }}
+            {{- if .Values.server.passstrength }}
+            - name: GOTIFY_PASSSTRENGTH
+              value: {{ .Values.server.passstrength | quote }}
+            {{- end }}
+            - name: GOTIFY_UPLOADEDIMAGESDIR
+              value: "data/images"
+            - name: GOTIFY_PLUGINSDIR
+              value: "data/plugins"
+          volumeMounts:
+            - name: {{ include "gotify.fullname" . }}-data
+              mountPath: /app/data
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: http
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      volumes:
+        - name: {{ include "gotify.fullname" . }}-data
+        {{- if .Values.persistence.enabled }}
+          persistentVolumeClaim:
+            claimName: {{ include "gotify.fullname" . }}-data
+        {{- else }}
+          emptyDir: { }
+        {{- end }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}

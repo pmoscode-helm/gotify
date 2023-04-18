@@ -1,0 +1,102 @@
+image:
+  # -- repository with gotify image
+  repository: gotify/server
+  # -- pull policy
+  pullPolicy: Always
+  # -- current version of the image
+  tag: 2.2.4
+
+# -- imagePullSecrets (not needed, if default image is used)
+imagePullSecrets: []
+
+# -- @ignore
+nameOverride: ""
+# -- @ignore
+fullnameOverride: ""
+
+server:
+  # responseHeaders: "Access-Control-Allow-Origin: \"*\"\nAccess-Control-Allow-Methods: \"GET,POST\""
+  # streamAllowedOrigins: ""
+  databaseDialect: sqlite3
+  # databaseConnection:   # Only needed when using mysql or portgresql
+  defaultUserName: admin # gotify internal default user
+  defaultUserPassword: admin # gotify internal default password
+  passstrength: 10
+  timezone: Europe/Berlin
+
+serviceAccount:
+  # -- enable serviceAccount
+  create: true
+  # -- add annotations to serviceAccount
+  annotations: {}
+  # -- name of the serviceAccount (will be generated if empty)
+  name: ""
+
+# -- @ignore
+podAnnotations: {}
+
+# -- @ignore
+podSecurityContext: {}
+  # fsGroup: 2000
+
+# -- @ignore
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: 80
+
+# -- Configure ingress
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  hosts:
+    - host: chart-example.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+persistence:
+  # -- enable persistence when true
+  enabled: false
+  # -- default storage size
+  size: 20Gi
+  # -- accessMode
+  accessMode: ReadWriteOnce
+  # -- actual storageClass
+  storageClass: ""
+
+# -- @ignore
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+# -- @ignore
+nodeSelector: {}
+
+# -- @ignore
+tolerations: []
+
+# -- @ignore
+affinity: {}
