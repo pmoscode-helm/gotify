@@ -47,11 +47,13 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 | persistence.enabled | bool | `false` | enable persistence when true |
 | persistence.size | string | `"20Gi"` | default storage size |
 | persistence.storageClass | string | `""` | actual storageClass |
-| server.databaseDialect | string | `"sqlite3"` |  |
-| server.defaultUserName | string | `"admin"` |  |
-| server.defaultUserPassword | string | `"admin"` |  |
-| server.passstrength | int | `10` |  |
-| server.timezone | string | `"Europe/Berlin"` |  |
+| server.databaseConnection | string | `""` | set connection string for mysql (gotify:secret@/gotifydb?charset=utf8&parseTime=True&loc=Local) or postgresql (host=localhost port=3306 user=gotify dbname=gotify password=secret) |
+| server.databaseDialect | string | `"sqlite3"` | select database kind (sqlite3, mysql, postgres) |
+| server.defaultUserName | string | `"admin"` | default user |
+| server.defaultUserPassword | string | `"admin"` | default user password |
+| server.passstrength | int | `10` | minimal password length |
+| server.registration | bool | `false` | is user registration enabled? |
+| server.timezone | string | `"Europe/Berlin"` | server timezone |
 | service.port | int | `80` |  |
 | service.type | string | `"ClusterIP"` |  |
 | serviceAccount.annotations | object | `{}` | add annotations to serviceAccount |

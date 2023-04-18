@@ -69,6 +69,8 @@ spec:
               value: "data/images"
             - name: GOTIFY_PLUGINSDIR
               value: "data/plugins"
+            - name: GOTIFY_REGISTRATION
+              value: {{ .Values.server.registration | quote }}
           volumeMounts:
             - name: {{ include "gotify.fullname" . }}-data
               mountPath: /app/data
