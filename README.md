@@ -62,4 +62,4 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| pmoscode | <info@pmoscode.de> |  |
+| pmoscode | <info@pmoscode.de> | <https://pmoscode.de> |
