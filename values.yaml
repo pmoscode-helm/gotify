@@ -17,12 +17,20 @@ fullnameOverride: ""
 server:
   # responseHeaders: "Access-Control-Allow-Origin: \"*\"\nAccess-Control-Allow-Methods: \"GET,POST\""
   # streamAllowedOrigins: ""
+  # -- select database kind (sqlite3, mysql, postgres)
   databaseDialect: sqlite3
-  # databaseConnection:   # Only needed when using mysql or portgresql
-  defaultUserName: admin # gotify internal default user
+  # -- set connection string for mysql (gotify:secret@/gotifydb?charset=utf8&parseTime=True&loc=Local) or postgresql (host=localhost port=3306 user=gotify dbname=gotify password=secret)
+  databaseConnection: ""
+  # -- default user
+  defaultUserName: admin
+  # -- default user password
   defaultUserPassword: admin # gotify internal default password
+  # -- minimal password length
   passstrength: 10
+  # -- server timezone
   timezone: Europe/Berlin
+  # -- is user registration enabled?
+  registration: false
 
 serviceAccount:
   # -- enable serviceAccount
