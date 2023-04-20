@@ -14,3 +14,19 @@ maintainers:
   - name: pmoscode
     email: info@pmoscode.de
     url: https://pmoscode.de
+
+annotations:
+  artifacthub.io/images: |
+    - name: gotify
+      image: gotify/server:2.2.4
+      platforms:
+        - linux/amd64
+  artifacthub.io/license: MIT
+  artifacthub.io/links: |
+    - name: Source
+      url: https://github.com/pmoscode-helm/gotify
+    - name: support
+      url: https://github.com/pmoscode-helm/gotify/issues
+  artifacthub.io/maintainers: |
+    - name: pmoscode
+      email: info@pmoscode.de
