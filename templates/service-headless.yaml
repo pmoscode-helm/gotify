@@ -1,12 +1,15 @@
-{{- if and (eq .Values.service.type "LoadBalancer") (.Values.ingress.enabled) }}
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "gotify.fullname" . }}
+  name: {{ include "gotify.fullname" . }}-headless
   labels:
     {{- include "gotify.labels" . | nindent 4 }}
 spec:
-  type: LoadBalancer
+  {{- if eq .Values.service.type "LoadBalancer" }}
+  type: ClusterIP
+  {{- else }}
+  type: {{ .Values.service.type }}
+  {{- end }}
   ports:
     - port: {{ .Values.service.port }}
       targetPort: http
@@ -14,4 +17,3 @@ spec:
       name: http
   selector:
     {{- include "gotify.selectorLabels" . | nindent 4 }}
-{{- end }}
