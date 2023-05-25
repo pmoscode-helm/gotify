@@ -21,3 +21,9 @@
 .idea/
 *.tmproj
 .vscode/
+
+README.md.gotmpl
+artifacthub-repo.yml
+tests
+scripts
+.pre-commit-config.yaml
