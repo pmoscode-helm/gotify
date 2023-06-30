@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- add checkov security scan ([041708a](https://github.com/pmoscode-helm/gotify/commit/041708af1b27546ff48345b40985975053ca469c) by Peter Motzko).
 - make it possible to use ingress and service-type "LoadBalancer" at the same time ([a494fdf](https://github.com/pmoscode-helm/gotify/commit/a494fdf84babed1ea7ceece0aa7e06022401a0fc) by Peter Motzko).
 - add taskfile ([1b800e6](https://github.com/pmoscode-helm/gotify/commit/1b800e66e28293f1ae2d10b98716ba71465b542f) by Peter Motzko).
 - add unittests ([c13d804](https://github.com/pmoscode-helm/gotify/commit/c13d8042092a5db3146e72c129addc075d946232) by Peter Motzko).
