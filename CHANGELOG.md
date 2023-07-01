@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- remove api-key from checkov GH Action ([7707b31](https://github.com/pmoscode-helm/gotify/commit/7707b318d4d3a10efd69064c8b037f782b8d5482) by Peter Motzko).
 - add checkov security scan ([041708a](https://github.com/pmoscode-helm/gotify/commit/041708af1b27546ff48345b40985975053ca469c) by Peter Motzko).
 - make it possible to use ingress and service-type "LoadBalancer" at the same time ([a494fdf](https://github.com/pmoscode-helm/gotify/commit/a494fdf84babed1ea7ceece0aa7e06022401a0fc) by Peter Motzko).
 - add taskfile ([1b800e6](https://github.com/pmoscode-helm/gotify/commit/1b800e66e28293f1ae2d10b98716ba71465b542f) by Peter Motzko).

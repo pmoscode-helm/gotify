@@ -3,8 +3,8 @@ name: gotify
 description: Gotify - a simple server for sending and receiving messages
 
 type: application
-version: 0.1.0
-appVersion: "2.2.4"
+version: 0.1.1
+appVersion: "2.2.5"
 
 home: https://gotify.net/
 sources:
