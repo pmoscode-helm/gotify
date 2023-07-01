@@ -1,5 +1,5 @@
 # gotify Helm Chart
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/gotify)](https://artifacthub.io/packages/search?repo=gotify)
 
 From https://gotify.net/:
@@ -40,7 +40,7 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 |-----|------|---------|-------------|
 | image.pullPolicy | string | `"Always"` | pull policy |
 | image.repository | string | `"gotify/server"` | repository with gotify image |
-| image.tag | string | `"2.2.4"` | current version of the image |
+| image.tag | string | `"2.2.5"` | current version of the image |
 | imagePullSecrets | list | `[]` | imagePullSecrets (not needed, if default image is used) |
 | ingress | object | `{"annotations":{},"className":"","enabled":false,"hosts":[{"host":"chart-example.local","paths":[{"path":"/","pathType":"ImplementationSpecific"}]}],"tls":[]}` | Configure ingress |
 | persistence.accessMode | string | `"ReadWriteOnce"` | accessMode |

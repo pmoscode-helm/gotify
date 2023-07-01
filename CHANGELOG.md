@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Features
 
+- update test ([5c4b10c](https://github.com/pmoscode-helm/gotify/commit/5c4b10cd845fe21e5ce54c2899b57a520bfb497c) by Peter Motzko).
 - bump app version to 2.2.5 ([bd8fbe8](https://github.com/pmoscode-helm/gotify/commit/bd8fbe8be76672bbc15bd924a3f41833a3911d80) by Peter Motzko).
 - remove api-key from checkov GH Action ([7707b31](https://github.com/pmoscode-helm/gotify/commit/7707b318d4d3a10efd69064c8b037f782b8d5482) by Peter Motzko).
 - add checkov security scan ([041708a](https://github.com/pmoscode-helm/gotify/commit/041708af1b27546ff48345b40985975053ca469c) by Peter Motzko).
