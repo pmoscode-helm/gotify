@@ -48,7 +48,7 @@ tests:
             protocol: TCP
       - equal:
           path: spec.template.spec.containers[0].image
-          value: gotify/server:2.2.4
+          value: gotify/server:2.2.5
       - isNotNullOrEmpty:
           path: spec.template.spec.containers[0]
       - lengthEqual:
