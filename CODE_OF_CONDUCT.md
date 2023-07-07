@@ -1,4 +1,4 @@
-# Code of Conduct - jDownloader 2 Helm Chart
+# Code of Conduct - Gotify Helm Chart
 
 ## Our Pledge
 
