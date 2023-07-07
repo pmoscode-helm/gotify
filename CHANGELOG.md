@@ -8,11 +8,23 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.1.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.1.1...HEAD)</small>
 
 ### Features
 
+- Add CONTRIBUTING.md file ([89d0a53](https://github.com/pmoscode-helm/gotify/commit/89d0a53031fd8574f5b3f12cd1c77299609714fb) by Peter Motzko).
+- Add contributing section to README.md.gotmpl ([385bcde](https://github.com/pmoscode-helm/gotify/commit/385bcdebf826897e42376ad469a67f64595309e0) by Peter Motzko).
+- update Taskfile to latest content ([745a145](https://github.com/pmoscode-helm/gotify/commit/745a145585fdbd79378293e183023eac67552eea) by Peter Motzko).
+- update readme badge ([4e37850](https://github.com/pmoscode-helm/gotify/commit/4e378504d5f44422f5f4b179f8e9a4cd16605c65) by Peter Motzko).
 - update test ([5c4b10c](https://github.com/pmoscode-helm/gotify/commit/5c4b10cd845fe21e5ce54c2899b57a520bfb497c) by Peter Motzko).
+
+<!-- insertion marker -->
+## [gotify-0.1.1](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.1.1) - 2023-07-01
+
+<small>[Compare with gotify-0.1.0](https://github.com/pmoscode-helm/gotify/compare/gotify-0.1.0...gotify-0.1.1)</small>
+
+### Features
+
 - bump app version to 2.2.5 ([bd8fbe8](https://github.com/pmoscode-helm/gotify/commit/bd8fbe8be76672bbc15bd924a3f41833a3911d80) by Peter Motzko).
 - remove api-key from checkov GH Action ([7707b31](https://github.com/pmoscode-helm/gotify/commit/7707b318d4d3a10efd69064c8b037f782b8d5482) by Peter Motzko).
 - add checkov security scan ([041708a](https://github.com/pmoscode-helm/gotify/commit/041708af1b27546ff48345b40985975053ca469c) by Peter Motzko).
@@ -27,7 +39,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add registration flag and update Readme ([1149cd4](https://github.com/pmoscode-helm/gotify/commit/1149cd47733eab28bb57de75307925968c508bf0) by Peter Motzko).
 - Add repositoryID ([9b3ec39](https://github.com/pmoscode-helm/gotify/commit/9b3ec39b49c163290e80d3dd810ead8778048854) by Peter Motzko).
 
-<!-- insertion marker -->
 ## [gotify-0.1.0](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.1.0) - 2023-04-18
 
 <small>[Compare with first commit](https://github.com/pmoscode-helm/gotify/compare/e19609915ca123a4694ae39a5ef347ce59cc7576...gotify-0.1.0)</small>
