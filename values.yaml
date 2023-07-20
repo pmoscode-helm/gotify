@@ -4,7 +4,7 @@ image:
   # -- pull policy
   pullPolicy: Always
   # -- current version of the image
-  tag: 2.2.5
+  tag: 2.3.0
 
 # -- imagePullSecrets (not needed, if default image is used)
 imagePullSecrets: []
