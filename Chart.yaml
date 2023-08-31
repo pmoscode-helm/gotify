@@ -3,7 +3,7 @@ name: gotify
 description: Gotify - a simple server for sending and receiving messages
 
 type: application
-version: 0.2.1
+version: 0.2.2
 appVersion: "2.3.0"
 
 home: https://gotify.net/
