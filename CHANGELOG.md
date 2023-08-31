@@ -18,6 +18,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - update readme badge ([4e37850](https://github.com/pmoscode-helm/gotify/commit/4e378504d5f44422f5f4b179f8e9a4cd16605c65) by Peter Motzko).
 - update test ([5c4b10c](https://github.com/pmoscode-helm/gotify/commit/5c4b10cd845fe21e5ce54c2899b57a520bfb497c) by Peter Motzko).
 
+### Bug Fixes
+
+- missing "-headless" suffix in ingress ([26ab24e](https://github.com/pmoscode-helm/gotify/commit/26ab24ed3e320385d5152cc65da9011fb7d3bede) by Peter Motzko).
+- typo in CONTRIBUTING.md ([145cca2](https://github.com/pmoscode-helm/gotify/commit/145cca2481dd1a12d940eed211c39f8aa0f820e2) by Peter Motzko).
+
 <!-- insertion marker -->
 ## [gotify-0.1.1](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.1.1) - 2023-07-01
 
