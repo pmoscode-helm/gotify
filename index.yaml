@@ -17,6 +17,39 @@ entries:
         - name: pmoscode
           email: info@pmoscode.de
     apiVersion: v2
+    appVersion: 2.3.0
+    created: "2023-08-31T23:16:03.923486174+02:00"
+    description: Gotify - a simple server for sending and receiving messages
+    digest: 4eb600f20abd6ce6149ee58d9ab3c48d5054642fdd4caaaa70ec2a12b03b819e
+    home: https://gotify.net/
+    icon: https://github.com/gotify/logo/raw/master/gotify-logo-small.png
+    maintainers:
+    - email: info@pmoscode.de
+      name: pmoscode
+      url: https://pmoscode.de
+    name: gotify
+    sources:
+    - https://gotify.net/
+    type: application
+    urls:
+    - https://github.com/pmoscode-helm/gotify/releases/download/gotify-0.2.0/gotify-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      artifacthub.io/images: |
+        - name: gotify
+          image: gotify/server:2.2.4
+          platforms:
+            - linux/amd64
+      artifacthub.io/license: MIT
+      artifacthub.io/links: |
+        - name: Source
+          url: https://github.com/pmoscode-helm/gotify
+        - name: support
+          url: https://github.com/pmoscode-helm/gotify/issues
+      artifacthub.io/maintainers: |
+        - name: pmoscode
+          email: info@pmoscode.de
+    apiVersion: v2
     appVersion: 2.2.5
     created: "2023-07-01T22:10:38.74761557+02:00"
     description: Gotify - a simple server for sending and receiving messages
@@ -52,4 +85,4 @@ entries:
     urls:
     - https://github.com/pmoscode-helm/gotify/releases/download/gotify-0.1.0/gotify-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-01T22:10:38.747625789+02:00"
+generated: "2023-08-31T23:16:03.923502629+02:00"
