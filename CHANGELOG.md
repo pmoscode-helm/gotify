@@ -6,12 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
-## Unreleased
+## [gotify-0.2.0](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.2.0) - 2023-08-31
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.1.1...HEAD)</small>
+<small>[Compare with gotify-0.1.1](https://github.com/pmoscode-helm/gotify/compare/gotify-0.1.1...gotify-0.2.0)</small>
 
 ### Features
 
+- bump app version to 2.3.0 ([7f2fdef](https://github.com/pmoscode-helm/gotify/commit/7f2fdefc3c4f378fab8780d8b88ad44dc5f51014) by Peter Motzko).
 - Add CONTRIBUTING.md file ([89d0a53](https://github.com/pmoscode-helm/gotify/commit/89d0a53031fd8574f5b3f12cd1c77299609714fb) by Peter Motzko).
 - Add contributing section to README.md.gotmpl ([385bcde](https://github.com/pmoscode-helm/gotify/commit/385bcdebf826897e42376ad469a67f64595309e0) by Peter Motzko).
 - update Taskfile to latest content ([745a145](https://github.com/pmoscode-helm/gotify/commit/745a145585fdbd79378293e183023eac67552eea) by Peter Motzko).
@@ -23,7 +24,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - missing "-headless" suffix in ingress ([26ab24e](https://github.com/pmoscode-helm/gotify/commit/26ab24ed3e320385d5152cc65da9011fb7d3bede) by Peter Motzko).
 - typo in CONTRIBUTING.md ([145cca2](https://github.com/pmoscode-helm/gotify/commit/145cca2481dd1a12d940eed211c39f8aa0f820e2) by Peter Motzko).
 
-<!-- insertion marker -->
 ## [gotify-0.1.1](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.1.1) - 2023-07-01
 
 <small>[Compare with gotify-0.1.0](https://github.com/pmoscode-helm/gotify/compare/gotify-0.1.0...gotify-0.1.1)</small>

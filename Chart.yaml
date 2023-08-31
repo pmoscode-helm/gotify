@@ -3,7 +3,7 @@ name: gotify
 description: Gotify - a simple server for sending and receiving messages
 
 type: application
-version: 0.2.0
+version: 0.2.1
 appVersion: "2.3.0"
 
 home: https://gotify.net/
@@ -18,7 +18,7 @@ maintainers:
 annotations:
   artifacthub.io/images: |
     - name: gotify
-      image: gotify/server:2.2.4
+      image: gotify/server:2.3.0
       platforms:
         - linux/amd64
   artifacthub.io/license: MIT
