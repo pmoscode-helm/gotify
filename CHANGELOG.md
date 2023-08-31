@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## Unreleased
+
+<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.2.1...HEAD)</small>
+
+### Bug Fixes
+
+- remove fix values image.tag value ([ae80d1d](https://github.com/pmoscode-helm/gotify/commit/ae80d1d8cf5ae0d62b434092a6a55351fb60f714) by Peter Motzko).
+
+<!-- insertion marker -->
 ## [gotify-0.2.1](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.2.1) - 2023-08-31
 
 <small>[Compare with gotify-0.2.0](https://github.com/pmoscode-helm/gotify/compare/gotify-0.2.0...gotify-0.2.1)</small>
