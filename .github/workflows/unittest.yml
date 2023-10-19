@@ -16,7 +16,7 @@ jobs:
       checks: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install unittest bin
         run: helm plugin install https://github.com/helm-unittest/helm-unittest.git
 
