@@ -25,4 +25,9 @@ jobs:
 
       - name: Check for updates
         run: |
-          hcuc --docker-hub-repo gotify/server --debug
+          hcuc --docker-hub-repo gotify/server --fail-on-update --debug
+
+      - name: Send notification
+        if: failure()
+        run: |
+          ./pipeline/send_mail.sh
