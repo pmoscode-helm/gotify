@@ -29,5 +29,11 @@ jobs:
 
       - name: Send notification
         if: failure()
+        env:
+          MAILJET_KEY: ${{ secrets.MAILJET_KEY }}
+          MAILJET_SECRET: ${{ secrets.MAILJET_SECRET }}
+          MAILJET_FROM_MAIL: ${{ vars.MAILJET_FROM_MAIL }}
+          MAILJET_TO_MAIL: ${{ vars.MAILJET_TO_MAIL }}
+          MAILJET_SUBJECT: ${{ vars.MAILJET_SUBJECT }}
         run: |
           ./pipeline/send_mail.sh
