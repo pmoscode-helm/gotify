@@ -27,3 +27,7 @@ artifacthub-repo.yml
 tests
 scripts
 .pre-commit-config.yaml
+pipeline/
+.env-template
+.env
+.github
