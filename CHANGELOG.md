@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Bug Fixes
 
+- unittest ([cb5df00](https://github.com/pmoscode-helm/gotify/commit/cb5df00a98a9319af82f58c5b790a2dd4201ed28) by Peter Motzko).
 - remove fix values image.tag value ([ae80d1d](https://github.com/pmoscode-helm/gotify/commit/ae80d1d8cf5ae0d62b434092a6a55351fb60f714) by Peter Motzko).
 
 <!-- insertion marker -->
