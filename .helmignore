@@ -31,3 +31,6 @@ pipeline/
 .env-template
 .env
 .github
+renovate.json
+Taskfile.yaml
+.helmignore
