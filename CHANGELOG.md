@@ -8,14 +8,33 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.2.1...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.3.0...HEAD)</small>
+
+<!-- insertion marker -->
+## [gotify-0.3.0](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.3.0) - 2023-11-28
+
+<small>[Compare with gotify-0.2.2](https://github.com/pmoscode-helm/gotify/compare/gotify-0.2.2...gotify-0.3.0)</small>
+
+### Features
+
+- add send notification step, when update available ([3289407](https://github.com/pmoscode-helm/gotify/commit/3289407e1df9723da09466226810223d45e5098f) by Peter Motzko).
+- add Helm chart update check ([c2b848c](https://github.com/pmoscode-helm/gotify/commit/c2b848c602854af983921f7e78bc9059dfbfd1e7) by Peter Motzko).
+- add trivy as security scanner ([6151ad7](https://github.com/pmoscode-helm/gotify/commit/6151ad7990c23c55f4b3b3b9727c4331639c9cb1) by Peter Motzko).
+
+### Bug Fixes
+
+- right way of using secrets / vars ([e97f9da](https://github.com/pmoscode-helm/gotify/commit/e97f9da93445dd22495f1375f4d6ef899615ca5a) by Peter Motzko).
+- add more files to .helmignore ([de2a448](https://github.com/pmoscode-helm/gotify/commit/de2a448206a000538272e8b1074177ec5fbd056f) by Peter Motzko).
+
+## [gotify-0.2.2](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.2.2) - 2023-08-31
+
+<small>[Compare with gotify-0.2.1](https://github.com/pmoscode-helm/gotify/compare/gotify-0.2.1...gotify-0.2.2)</small>
 
 ### Bug Fixes
 
 - unittest ([cb5df00](https://github.com/pmoscode-helm/gotify/commit/cb5df00a98a9319af82f58c5b790a2dd4201ed28) by Peter Motzko).
 - remove fix values image.tag value ([ae80d1d](https://github.com/pmoscode-helm/gotify/commit/ae80d1d8cf5ae0d62b434092a6a55351fb60f714) by Peter Motzko).
 
-<!-- insertion marker -->
 ## [gotify-0.2.1](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.2.1) - 2023-08-31
 
 <small>[Compare with gotify-0.2.0](https://github.com/pmoscode-helm/gotify/compare/gotify-0.2.0...gotify-0.2.1)</small>
