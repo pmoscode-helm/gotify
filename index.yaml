@@ -4,7 +4,7 @@ entries:
   - annotations:
       artifacthub.io/images: |
         - name: gotify
-          image: gotify/server:2.3.0
+          image: gotify/server:2.4.0
           platforms:
             - linux/amd64
       artifacthub.io/license: MIT
