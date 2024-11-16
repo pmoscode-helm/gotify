@@ -1,5 +1,5 @@
 # gotify Helm Chart
-![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat-square)
+![Version: 0.5.1](https://img.shields.io/badge/Version-0.5.1-informational?style=flat-square)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/gotify)](https://artifacthub.io/packages/search?repo=gotify)
 
 From https://gotify.net/:

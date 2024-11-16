@@ -8,13 +8,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.4.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.5.0...HEAD)</small>
 
 ### Features
 
-- update image to v 2.6.0 ([6938aa1](https://github.com/pmoscode-helm/gotify/commit/6938aa16adf0ebddb3eb99132ffe204700c96a03) by Peter Motzko).
+- update image to v 2.6.1 ([da6847b](https://github.com/pmoscode-helm/gotify/commit/da6847b70094d064588e62437fc0d093a424c971) by Peter Motzko).
 
 <!-- insertion marker -->
+## [gotify-0.5.0](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.5.0) - 2024-11-16
+
+<small>[Compare with gotify-0.4.0](https://github.com/pmoscode-helm/gotify/compare/gotify-0.4.0...gotify-0.5.0)</small>
+
+### Features
+
+- update image to v 2.6.0 ([97c7887](https://github.com/pmoscode-helm/gotify/commit/97c78879070f9fa36e1a6cd75058781e32b8ee0c) by Peter Motzko).
+
 ## [gotify-0.4.0](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.4.0) - 2024-06-26
 
 <small>[Compare with gotify-0.3.0](https://github.com/pmoscode-helm/gotify/compare/gotify-0.3.0...gotify-0.4.0)</small>
