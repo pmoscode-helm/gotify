@@ -44,7 +44,7 @@ tests:
           path: spec.template.spec.containers[0].ports
           content:
             name: http
-            containerPort: 80
+            containerPort: 8080
             protocol: TCP
       - equal:
           path: spec.template.spec.containers[0].image
@@ -58,6 +58,6 @@ tests:
           path: spec.template.spec.containers[0].resources
       - lengthEqual:
           path: spec.template.spec.containers[0].env
-          count: 8
+          count: 9
       - notExists:
           path: spec.template.spec.containers[1]
