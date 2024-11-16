@@ -8,9 +8,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.3.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.4.0...HEAD)</small>
+
+### Features
+
+- update image to v 2.6.0 ([6938aa1](https://github.com/pmoscode-helm/gotify/commit/6938aa16adf0ebddb3eb99132ffe204700c96a03) by Peter Motzko).
 
 <!-- insertion marker -->
+## [gotify-0.4.0](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.4.0) - 2024-06-26
+
+<small>[Compare with gotify-0.3.0](https://github.com/pmoscode-helm/gotify/compare/gotify-0.3.0...gotify-0.4.0)</small>
+
 ## [gotify-0.3.0](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.3.0) - 2023-11-28
 
 <small>[Compare with gotify-0.2.2](https://github.com/pmoscode-helm/gotify/compare/gotify-0.2.2...gotify-0.3.0)</small>
