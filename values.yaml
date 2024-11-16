@@ -50,6 +50,7 @@ podSecurityContext: {}
 # -- @ignore
 securityContext:
   readOnlyRootFilesystem: true
+  allowPrivilegeEscalation: false
   # capabilities:
   #   drop:
   #   - ALL
