@@ -49,11 +49,12 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 | persistence.storageClass | string | `""` | actual storageClass |
 | server.databaseConnection | string | `""` | set connection string for mysql (gotify:secret@/gotifydb?charset=utf8&parseTime=True&loc=Local) or postgresql (host=localhost port=3306 user=gotify dbname=gotify password=secret) |
 | server.databaseDialect | string | `"sqlite3"` | select database kind (sqlite3, mysql, postgres) |
-| server.defaultUserName | string | `"admin"` | default user |
-| server.defaultUserPassword | string | `"admin"` | default user password |
+| server.defaultUserName | string | `"admin"` | default user, can be set in a secret |
+| server.defaultUserPassword | string | `"admin"` | default user password, can be set in a secret |
 | server.passstrength | int | `10` | minimal password length |
 | server.registration | bool | `false` | is user registration enabled? |
 | server.timezone | string | `"Europe/Berlin"` | server timezone |
+| server.additionalEnvvars | list | `[]` | additional environment variables, using the Kubernetes format eg `[{"name": "ENV_VAR", "value": "value"}]` |
 | service.port | int | `80` |  |
 | service.type | string | `"ClusterIP"` |  |
 | serviceAccount.annotations | object | `{}` | add annotations to serviceAccount |

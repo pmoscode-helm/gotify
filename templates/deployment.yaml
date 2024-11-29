@@ -57,10 +57,14 @@ spec:
               value: {{ .Values.server.databaseConnection | quote }}
               {{- end }}
             {{- end }}
+            {{- if .Values.server.defaultUserName }}
             - name: GOTIFY_DEFAULTUSER_NAME
               value: {{ .Values.server.defaultUserName | quote }}
+            {{- end }}
+            {{- if .Values.server.defaultUserPassword }}
             - name: GOTIFY_DEFAULTUSER_PASS
               value: {{ .Values.server.defaultUserPassword | quote }}
+            {{- end }}
             {{- if .Values.server.passstrength }}
             - name: GOTIFY_PASSSTRENGTH
               value: {{ .Values.server.passstrength | quote }}
@@ -73,6 +77,9 @@ spec:
               value: "data/plugins"
             - name: GOTIFY_REGISTRATION
               value: {{ .Values.server.registration | quote }}
+            {{- with .Values.server.additionalEnvVars }}
+              {{- toYaml . | nindent 12 }}
+            {{- end }}
           volumeMounts:
             - name: {{ include "gotify.fullname" . }}-data
               mountPath: /app/data

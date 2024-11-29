@@ -31,6 +31,8 @@ server:
   timezone: Europe/Berlin
   # -- is user registration enabled?
   registration: false
+  # -- additional environment variables to be used
+  additionalEnvVars: []
 
 serviceAccount:
   # -- enable serviceAccount
