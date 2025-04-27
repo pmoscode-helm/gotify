@@ -8,13 +8,28 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.5.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.5.1...HEAD)</small>
 
 ### Features
 
-- update image to v 2.6.1 ([da6847b](https://github.com/pmoscode-helm/gotify/commit/da6847b70094d064588e62437fc0d093a424c971) by Peter Motzko).
+- update image to v 2.6.3 ([67a1aa9](https://github.com/pmoscode-helm/gotify/commit/67a1aa94607bbafadd6c7e6681b4fa622a08e087) by Peter Motzko).
+
+### Bug Fixes
+
+- update tests to current changes ([5e749b8](https://github.com/pmoscode-helm/gotify/commit/5e749b882dbfe8308e5b9249ef5057acad674222) by Peter Motzko).
+- set allowPrivilegeEscalation to false ([805db22](https://github.com/pmoscode-helm/gotify/commit/805db222d6fc6e036e226d66142f9e3453697943) by Peter Motzko).
+- set root FS read-only ([8405806](https://github.com/pmoscode-helm/gotify/commit/8405806caf736e076d63e0880441abd3d3212ac4) by Peter Motzko).
+- use port > 1024 ([55cd7e2](https://github.com/pmoscode-helm/gotify/commit/55cd7e27f8d812ea99816e01e6f291c06b0eae11) by Peter Motzko).
 
 <!-- insertion marker -->
+## [gotify-0.5.1](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.5.1) - 2024-11-16
+
+<small>[Compare with gotify-0.5.0](https://github.com/pmoscode-helm/gotify/compare/gotify-0.5.0...gotify-0.5.1)</small>
+
+### Features
+
+- update image to v 2.6.1 ([046bde5](https://github.com/pmoscode-helm/gotify/commit/046bde5600cfed31d81f222ff232ad817face3bb) by Peter Motzko).
+
 ## [gotify-0.5.0](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.5.0) - 2024-11-16
 
 <small>[Compare with gotify-0.4.0](https://github.com/pmoscode-helm/gotify/compare/gotify-0.4.0...gotify-0.5.0)</small>
