@@ -4,6 +4,39 @@ entries:
   - annotations:
       artifacthub.io/images: |
         - name: gotify
+          image: gotify/server:2.7.2
+          platforms:
+            - linux/amd64
+      artifacthub.io/license: MIT
+      artifacthub.io/links: |
+        - name: Source
+          url: https://github.com/pmoscode-helm/gotify
+        - name: support
+          url: https://github.com/pmoscode-helm/gotify/issues
+      artifacthub.io/maintainers: |
+        - name: pmoscode
+          email: info@pmoscode.de
+    apiVersion: v2
+    appVersion: 2.7.2
+    created: "2025-09-14T20:42:59.074564+02:00"
+    description: Gotify - a simple server for sending and receiving messages
+    digest: 2543005a7da4b4bc2167cf6f559b528362d60abb957c0e696a9f508c7d0d3882
+    home: https://gotify.net/
+    icon: https://github.com/gotify/logo/raw/master/gotify-logo-small.png
+    maintainers:
+    - email: info@pmoscode.de
+      name: pmoscode
+      url: https://pmoscode.de
+    name: gotify
+    sources:
+    - https://gotify.net/
+    type: application
+    urls:
+    - https://github.com/pmoscode-helm/gotify/releases/download/gotify-0.6.1/gotify-0.6.1.tgz
+    version: 0.6.1
+  - annotations:
+      artifacthub.io/images: |
+        - name: gotify
           image: gotify/server:2.7.1
           platforms:
             - linux/amd64
@@ -349,4 +382,4 @@ entries:
     urls:
     - https://github.com/pmoscode-helm/gotify/releases/download/gotify-0.1.0/gotify-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-13T21:22:28.928266+02:00"
+generated: "2025-09-14T20:42:59.074623+02:00"
