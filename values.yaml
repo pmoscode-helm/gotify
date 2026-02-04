@@ -88,6 +88,10 @@ persistence:
   # -- actual storageClass
   storageClass: ""
 
+# when persistence.enabled is set to true, strategy should be changed to 'Recreate'
+updateStrategy:
+  type: RollingUpdate 
+
 # -- @ignore
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
