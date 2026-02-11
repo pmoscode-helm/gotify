@@ -1,0 +1,1 @@
+`helm push gotify-0.7.1.tgz oci://registry-1.docker.io/tobiashvmz`
