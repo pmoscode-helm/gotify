@@ -8,16 +8,24 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.7.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/pmoscode-helm/gotify/compare/gotify-0.8.1...HEAD)</small>
 
 ### Features
 
-- update image to v 2.9.0 ([466b4c9](https://github.com/pmoscode-helm/gotify/commit/466b4c904db4acbd351ef9c23034007d520df122) by Peter Motzko).
+- update image to v 2.9.1 ([5cf8900](https://github.com/pmoscode-helm/gotify/commit/5cf8900189972f5b3ca290d9a21896696f3f65a3) by Peter Motzko).
 
 <!-- insertion marker -->
-## [gotify-0.7.0](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.7.0) - 2026-01-03
+## [gotify-0.8.1](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.8.1) - 2026-02-16
 
-<small>[Compare with gotify-0.6.2](https://github.com/pmoscode-helm/gotify/compare/gotify-0.6.2...gotify-0.7.0)</small>
+<small>[Compare with gotify-0.8.0](https://github.com/pmoscode-helm/gotify/compare/gotify-0.8.0...gotify-0.8.1)</small>
+
+### Features
+
+- update image to v 2.9.0 ([8cfcd99](https://github.com/pmoscode-helm/gotify/commit/8cfcd99fe69aaf3ca7da3c787855ecd2e05244e4) by Peter Motzko).
+
+## [gotify-0.8.0](https://github.com/pmoscode-helm/gotify/releases/tag/gotify-0.8.0) - 2026-01-03
+
+<small>[Compare with gotify-0.6.2](https://github.com/pmoscode-helm/gotify/compare/gotify-0.6.2...gotify-0.8.0)</small>
 
 ### Features
 
