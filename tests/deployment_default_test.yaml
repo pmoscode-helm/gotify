@@ -61,3 +61,20 @@ tests:
           count: 9
       - notExists:
           path: spec.template.spec.containers[1]
+
+  - it: should render responseHeaders and streamAllowedOrigins in Gotify 3 syntax
+    template: templates/deployment.yaml
+    set:
+      server.responseHeaders: '{"Access-Control-Allow-Origin":"*"}'
+      server.streamAllowedOrigins: "a.example.com,b.example.com"
+    asserts:
+      - contains:
+          path: spec.template.spec.containers[0].env
+          content:
+            name: GOTIFY_SERVER_RESPONSEHEADERS
+            value: '{"Access-Control-Allow-Origin":"*"}'
+      - contains:
+          path: spec.template.spec.containers[0].env
+          content:
+            name: GOTIFY_SERVER_STREAM_ALLOWEDORIGINS
+            value: "a.example.com,b.example.com"

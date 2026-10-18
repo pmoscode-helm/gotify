@@ -1,5 +1,5 @@
 # gotify Helm Chart
-![Version: 0.8.1](https://img.shields.io/badge/Version-0.8.1-informational?style=flat-square)
+![Version: 0.9.0](https://img.shields.io/badge/Version-0.9.0-informational?style=flat-square)
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/gotify)](https://artifacthub.io/packages/search?repo=gotify)
 
 From https://gotify.net/:
@@ -34,6 +34,19 @@ See [helm uninstall](https://helm.sh/docs/helm/helm_uninstall/) for command docu
 
 See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command documentation.
 
+### Upgrading to 0.9.0 (Gotify 3)
+
+Chart version 0.9.0 switches the image to Gotify 3, which contains breaking changes. See the official [migration guide](https://gotify.net/docs/migrate-to-3) for details.
+
+- **Backup your data first.** Gotify migrates the database on first start (tokens are stored hashed now), so a downgrade to Gotify 2 should not be expected to work without restoring the backup.
+- `server.responseHeaders` must be a JSON map now, e.g. `{"Access-Control-Allow-Origin":"*"}` (previously YAML style `Access-Control-Allow-Origin: "*"`).
+- `server.streamAllowedOrigins` must be a comma-separated list now, e.g. `a.example.com,b.example.com` (previously `[a.example.com, b.example.com]`).
+- Set both values in a values file (`-f values.yaml`). On the command line `--set` splits on commas (escape them with `\,`) and turns `{...}` into a list, which breaks the JSON map.
+- API changes affecting clients and scripts (not the chart itself):
+  - application and client tokens are only shown once on creation or rotation
+  - some sensitive actions require an elevated client token (otherwise `403`)
+  - `paging.next` in message lists is a relative path now
+
 ## Values
 
 | Key | Type | Default | Description |
@@ -53,6 +66,8 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 | server.defaultUserPassword | string | `"admin"` | default user password |
 | server.passstrength | int | `10` | minimal password length |
 | server.registration | bool | `false` | is user registration enabled? |
+| server.responseHeaders | string | `""` | additional response headers as JSON map (Gotify >= 3), e.g. '{"Access-Control-Allow-Origin":"*","Access-Control-Allow-Methods":"GET,POST"}' |
+| server.streamAllowedOrigins | string | `""` | allowed origins for the websocket stream as comma-separated list (Gotify >= 3), e.g. "a.example.com,b.example.com" |
 | server.timezone | string | `"Europe/Berlin"` | server timezone |
 | service.port | int | `80` |  |
 | service.type | string | `"ClusterIP"` |  |

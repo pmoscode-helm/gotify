@@ -15,8 +15,10 @@ nameOverride: ""
 fullnameOverride: ""
 
 server:
-  # responseHeaders: "Access-Control-Allow-Origin: \"*\"\nAccess-Control-Allow-Methods: \"GET,POST\""
-  # streamAllowedOrigins: ""
+  # -- additional response headers as JSON map (Gotify >= 3), e.g. '{"Access-Control-Allow-Origin":"*","Access-Control-Allow-Methods":"GET,POST"}'
+  responseHeaders: ""
+  # -- allowed origins for the websocket stream as comma-separated list (Gotify >= 3), e.g. "a.example.com,b.example.com"
+  streamAllowedOrigins: ""
   # -- select database kind (sqlite3, mysql, postgres)
   databaseDialect: sqlite3
   # -- set connection string for mysql (gotify:secret@/gotifydb?charset=utf8&parseTime=True&loc=Local) or postgresql (host=localhost port=3306 user=gotify dbname=gotify password=secret)
